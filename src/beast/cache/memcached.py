@@ -1,5 +1,5 @@
 from threading import local
-from python-memcached.memcache import Client
+from memcache import Client
 from zope.interface import implements
 from plone.memoize.interfaces import ICacheChooser
 from plone.memoize.ram import MemcacheAdapter
