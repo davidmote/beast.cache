@@ -19,12 +19,15 @@ setup(name='beast.cache',
       author_email='',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
+      packages=find_packages('src', exclude=['ez_setup']),
+      package_dir={'':'src'},
       namespace_packages=['beast'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'pylibmc',
+          'plone.memoize'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
