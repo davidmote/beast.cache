@@ -25,9 +25,7 @@ setup(name='beast.cache',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          'pylibmc',
-          'plone.memoize'
+          'setuptools'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

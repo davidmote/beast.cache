@@ -4,8 +4,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="beast.cache">
 
-  <five:registerPackage package="." initialize=".initialize" />
-  <include file="overrides.zcml" />
+  <utility factory=".memcached.MemcachedCacheChooser" />
   <!-- -*- extra stuff goes here -*- -->
   
 </configure>
