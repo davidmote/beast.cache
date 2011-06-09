@@ -4,7 +4,8 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="beast.cache">
 
-  <utility factory=".memcached.MemcachedCacheChooser" />
+  <utility provides="plone.memoize.interfaces.ICacheChooser" 
+           factory=".memcached.MemcachedCacheChooser" />
   <!-- -*- extra stuff goes here -*- -->
   
 </configure>
