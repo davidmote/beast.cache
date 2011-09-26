@@ -5,9 +5,7 @@
     i18n_domain="beast.cache">
 
   <five:registerPackage package="." initialize=".initialize" />
-<!-- 
   <include file="overrides.zcml" />
- -->
   <!-- -*- extra stuff goes here -*- -->
   
 </configure>

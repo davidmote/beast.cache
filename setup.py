@@ -25,9 +25,14 @@ setup(name='beast.cache',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools'
+          'setuptools',
+          'python-memcached',
           # -*- Extra requirements: -*-
       ],
+      
+    extras_require=dict(
+        test=['plone.app.testing'],
+        ),
       entry_points="""
       # -*- Entry points: -*-
 
